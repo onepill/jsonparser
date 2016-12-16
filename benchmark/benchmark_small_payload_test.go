@@ -6,15 +6,18 @@ package benchmark
 
 import (
 	"encoding/json"
+
 	"github.com/Jeffail/gabs"
 	"github.com/antonholmquist/jason"
 	"github.com/bitly/go-simplejson"
-	"github.com/buger/jsonparser"
+	// "github.com/buger/jsonparser"
+	"jsonparser"
+	"testing"
+
 	jlexer "github.com/mailru/easyjson/jlexer"
-	"github.com/mreiferson/go-ujson"
+	ujson "github.com/mreiferson/go-ujson"
 	"github.com/pquerna/ffjson/ffjson"
 	"github.com/ugorji/go/codec"
-	"testing"
 	// "fmt"
 	"bytes"
 	"errors"
